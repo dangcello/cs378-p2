@@ -3,6 +3,78 @@
   Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
 */
 
-.menu {
-  color: blue;
+
+.logo-container {
+  text-align: center;
 }
+
+.logo-img {
+  max-width: 200vh;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.logo-text {
+  color: #ff0000; 
+  font-size: 8vh;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+
+}
+
+
+
+.menu {
+  background-color: black; /* Ensure the container is black */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0; /* Remove extra padding */
+  
+}
+
+.menu > div {
+  margin: 0; /* Remove margin between menu items */
+  border: none; /* Remove any potential white borders */
+}
+
+.d-flex.align-items-center {
+  border: none !important; /* Ensure Bootstrap doesn't add a border */
+  margin-bottom: 0 !important; /* Remove spacing between items */
+  padding: 10px !important; /* Keep padding for spacing */
+}
+
+.menu h4 {
+  font-style: bold;
+  color: bisque;
+  font-size: 6vh;
+}
+
+
+.menu p {
+  font-style: italic;
+  color: gold;
+  font-size: 4.5vh;
+
+}
+
+.menu h5  {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 4vh;
+}
+
+.add-button {
+  background-color: #ff0000 !important;
+  border: none !important;
+  margin-top: auto;  
+  transition: background-color 0.3s ease !important;
+}
+
+.add-button:hover {
+  background-color: #960000 !important;
+}
+
+.add-button:active {
+  background-color: #430000 !important;
+}
+
