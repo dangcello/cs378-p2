@@ -15,32 +15,36 @@
   margin: 0 auto; 
 }
 
-.logo-text {
+.logo-text1{
   color: #ff0000; 
   font-size: 8vh;
   font-weight: bold;
-  font-family: 'Pacifico', cursive;
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+.logo-text{
+  color: #ffffff; 
+  font-size: 8vh;
+  font-weight: bold;
+  font-family: 'Brush Script MT', cursive;
+}
 
 .menu {
-  background-color: black; /* Ensure the container is black */
+  background-color: rgb(255, 255, 255);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 0; /* Remove extra padding */
+  padding: 0;
   
 }
 
 .menu > div {
-  margin: 0; /* Remove margin between menu items */
-  border: none; /* Remove any potential white borders */
+  margin: 0;
+  border: none;
 }
 
 .d-flex.align-items-center {
-  border: none !important; /* Ensure Bootstrap doesn't add a border */
-  margin-bottom: 0 !important; /* Remove spacing between items */
-  padding: 10px !important; /* Keep padding for spacing */
+  border: none !important;
+  margin-bottom: 0 !important;
+  padding: 10px !important;
 }
 
 .menu h4 {
@@ -59,7 +63,7 @@
 
 .menu h5  {
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 4vh;
 }
 
