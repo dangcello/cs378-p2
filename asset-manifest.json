@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/cs378-p2/static/css/main.7a8c878a.css",
+    "main.js": "/cs378-p2/static/js/main.f1fb037f.js",
+    "static/js/787.adad572c.chunk.js": "/cs378-p2/static/js/787.adad572c.chunk.js",
+    "static/media/yakitori.png": "/cs378-p2/static/media/yakitori.4607eac7ee100bb3b73d.png",
+    "static/media/ramen.png": "/cs378-p2/static/media/ramen.125c98f7dc9998577310.png",
+    "static/media/gyoza.png": "/cs378-p2/static/media/gyoza.27ccd034e1aadd76ec20.png",
+    "static/media/okonomiyaki.png": "/cs378-p2/static/media/okonomiyaki.61f5abaaaedea8ef71bc.png",
+    "static/media/sushi.png": "/cs378-p2/static/media/sushi.6b2c6929c74fcbfe583c.png",
+    "static/media/takoyaki.png": "/cs378-p2/static/media/takoyaki.b8ba12c540a8ddf4b386.png",
+    "static/media/katsu-curry.png": "/cs378-p2/static/media/katsu-curry.8edd2b9ebc67b8b87277.png",
+    "static/media/sashimi.png": "/cs378-p2/static/media/sashimi.b18e1a3471f74c5ecc39.png",
+    "static/media/matcha-cake.png": "/cs378-p2/static/media/matcha-cake.ba045126fc0dea8ccda8.png",
+    "static/media/mochi.png": "/cs378-p2/static/media/mochi.5c335d682a9d8e1890f2.png",
+    "static/media/woo_beasal.jpg": "/cs378-p2/static/media/woo_beasal.aa5da2bfc6b22e4a1156.jpg",
+    "static/media/yangyum_galbi_raw.jpg": "/cs378-p2/static/media/yangyum_galbi_raw.8d2c3e71758d37af07f6.jpg",
+    "static/media/gen_steak_raw.jpg": "/cs378-p2/static/media/gen_steak_raw.82caae294bd00fca1f06.jpg",
+    "static/media/Logo.jpg": "/cs378-p2/static/media/Logo.50ff1c5d613b42d677a2.jpg",
+    "static/media/porkbelly.jpg": "/cs378-p2/static/media/porkbelly.85f2d9b12812d818573a.jpg",
+    "index.html": "/cs378-p2/index.html",
+    "main.7a8c878a.css.map": "/cs378-p2/static/css/main.7a8c878a.css.map",
+    "main.f1fb037f.js.map": "/cs378-p2/static/js/main.f1fb037f.js.map",
+    "787.adad572c.chunk.js.map": "/cs378-p2/static/js/787.adad572c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a8c878a.css",
+    "static/js/main.f1fb037f.js"
+  ]
+}
