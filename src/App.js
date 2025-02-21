@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
 import './App.css';
 import MenuItem from './components/MenuItem';
 import Logo from './components/Logo';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const menuItems = [
   {
@@ -76,40 +77,75 @@ const menuItems = [
   }
 ];
 
-const logo = [
-  {
-    title:'Authentic Korean/Japanese Fusion',
-    subtitle:'Fresh and Delicious Asian Foods!',
-    imageName: 'Logo.jpg',
-  }
-];
-
 function App() {
+  const [quantities, setQuantities] = useState(
+    menuItems.reduce((acc, item) => ({ ...acc, [item.id]: 0 }), {})
+  );
+
+  const updateQuantity = (id, newQuantity) => {
+    setQuantities((prevQuantities) => ({ ...prevQuantities, [id]: newQuantity }));
+  };
+
+  const subtotal = menuItems.reduce((total, item) => total + item.price * quantities[item.id], 0);
+
+  const clearAll = () => {
+    setQuantities(
+      menuItems.reduce((acc, item) => ({ ...acc, [item.id]: 0 }), {})
+    );
+  };
+
+
+  const placeOrder = () => {
+    const orderedItems = menuItems
+      .filter((item) => quantities[item.id] > 0)
+      .map((item) => `${item.title} x${quantities[item.id]}`)
+      .join("\n");
+
+    if (orderedItems.length === 0) {
+      alert("No items in cart.");
+    } else {
+      alert(`Order placed!\n\nItems Ordered:\n${orderedItems}\n\nTotal: $${subtotal.toFixed(2)}`);
+    }
+  };
+
   return (
     <div className="test">
-        {logo.map(item => (
-        <div className="logo-wrapper">
-          <Logo 
-            title={item.title} 
-            subtitle={item.subtitle}
-            imageName={item.imageName} 
-          />
-        </div>
-        ))}      
+      <div className="logo-wrapper">
+        <Logo
+          title="Authentic Korean/Japanese Fusion"
+          subtitle="Fresh and Delicious Asian Foods!"
+          imageName="Logo.jpg"
+        />
+      </div>
 
-      <div className="menu">
-        {menuItems.map(item => (
-          <MenuItem 
-            key={item.id}
-            title={item.title} 
-            description={item.description}
-            imageName={item.imageName} 
-            price={item.price}
-          />
-        ))}
+      <div className="menu-container">
+        <div className="menu">
+          {menuItems.map((item) => (
+            <MenuItem
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              imageName={item.imageName}
+              price={item.price}
+              quantity={quantities[item.id]}
+              setQuantity={(newQuantity) => updateQuantity(item.id, newQuantity)}
+            />
+          ))}
+        </div>
+
+        <div className="button-wrapper">
+          <h4 className="subtotal-text">Subtotal: ${subtotal.toFixed(2)}</h4>
+          <button className="order-button" onClick={placeOrder}>
+            Place Order
+          </button>
+          <button className="clear-all-button" onClick={clearAll}>
+            Clear All
+          </button>
+        </div>
       </div>
     </div>
   );
 }
+
 
 export default App;
